@@ -15,6 +15,9 @@ const Header = () => {
       <div className="header">
         <div className="header__container">
           <div>
+            <div className="sub-text-container">
+              <p className="sub-text">Hey there</p>
+            </div>
             <a href="#about">
               <motion.div
                 className="header__badge"
@@ -27,7 +30,7 @@ const Header = () => {
                   <img className="memoji" src={bavAvatar} />
                 </div>
                 <div>
-                  <p className="p-text">Hello, I'm</p>
+                  <p className="p-text">My name is </p>
                   <h1 className="head-text">Bav Kudhail</h1>
                 </div>
               </motion.div>

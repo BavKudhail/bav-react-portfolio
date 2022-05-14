@@ -12,9 +12,6 @@
   z-index: 100;
 }
 
-.navbar__logo {
-}
-
 .navbar__logo-container {
   padding: 0.5rem;
   border-radius: 50%;
@@ -37,9 +34,7 @@
 }
 
 .navbar__links li {
-  margin: 0 1rem;
   cursor: pointer;
-  flex-direction: column;
 }
 
 .navbar__links a {
@@ -48,8 +43,14 @@
   text-transform: capitalize;
   font-weight: 700;
   transition: all 0.3s ease-in-out;
+  padding: 0.5rem 1.5rem;
+  border: 1px solid rgba(255, 255, 255, 0);
+  transition: 0.5s ease-in-out;
 }
 
 .navbar__links a:hover {
+  transition: 0.5s ease-in-out;
   color: var(--blue-color);
+  font-family: var(--font-marker);
+  border: 1px solid var(--blue-color);
 }
