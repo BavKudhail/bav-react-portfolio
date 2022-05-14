@@ -18,17 +18,22 @@
 .navbar__logo-container {
   padding: 0.5rem;
   border-radius: 50%;
-  border: 1px solid rgba(0, 0, 0, 0.9);
+  border: 1px solid rgba(255, 255, 255, 0.3);
 }
 
 .navbar__logo-container span {
+  color: var(--white-color);
   font-size: 25px;
   font-weight: bold;
 }
 
 .navbar__links {
+  flex: 1;
   display: flex;
   list-style: none;
+
+  justify-content: center;
+  align-items: center;
 }
 
 .navbar__links li {
@@ -38,7 +43,7 @@
 }
 
 .navbar__links a {
-  color: rgb(182, 182, 182);
+  color: var(--gray-color);
   text-decoration: none;
   text-transform: capitalize;
   font-weight: 700;
@@ -46,5 +51,5 @@
 }
 
 .navbar__links a:hover {
-  color: #2590ca;
+  color: var(--blue-color);
 }

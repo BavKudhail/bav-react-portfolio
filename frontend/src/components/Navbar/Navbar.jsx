@@ -14,7 +14,7 @@ const Navbar = () => {
       <ul className="navbar__links">
         {navLinks.map((link) => {
           return (
-            <li key={link} className="navbar_link">
+            <li key={link} className="navbar_link ">
               <a href={`#${link}`}>{link}</a>
             </li>
           );
