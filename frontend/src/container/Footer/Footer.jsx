@@ -9,6 +9,7 @@ const Footer = () => {
     <>
       <div className="contact__container">
         <h2 className="head-text">Get in touch 💬</h2>
+        <p className="sub-text">Let's build something awesome!</p>
         <div className="contact__cards">
           <div className="contact__card">
             {/* email */}
@@ -22,32 +23,36 @@ const Footer = () => {
           </div>
         </div>
         {/* contact form */}
-        <div className="contact__form app__flex">
-          <div className="app__flex">
-            <input
-              className="p-text input-field"
-              name="name"
-              type="text"
-              placeholder="Your Name"
-            />
+        <div className="contact__form-container">
+          <div className="contact__form app__flex">
+            <div className="app__flex">
+              <input
+                className="p-text input-field"
+                name="name"
+                type="text"
+                placeholder="Your Name"
+              />
+            </div>
+            <div className="app__flex">
+              <input
+                className="p-text input-field"
+                name="name"
+                type="text"
+                placeholder="Your Email"
+              />
+            </div>
+            <div className="app__flex">
+              <textarea
+                className="p-text input-field "
+                placeholder="Your Message"
+                name="message"
+              />
+            </div>
+            <button type="button" className="msg-button">
+              Send Message
+            </button>
           </div>
-          <input
-            className="p-text input-field"
-            name="name"
-            type="text"
-            placeholder="Your Name"
-          />
         </div>
-        <div className="app__flex">
-          <textarea
-            className="p-text input-field "
-            placeholder="Your Message"
-            name="message"
-          />
-        </div>
-        <button type="button" className="msg-button">
-          Send Message
-        </button>
       </div>
     </>
   );
