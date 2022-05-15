@@ -1,11 +1,14 @@
-const express = require("express");
+import express from "express";
+import "./config/mongoConnect.js";
 
 const app = express();
 
+const PORT = 3000;
+
 app.get("/", (req, res) => {
-  res.send("Server is running");
+  res.send(`Server is running at http://localhost:${PORT}`);
 });
 
-app.listen(3000, () => {
-  console.log("Server at http://localhost:3000");
+app.listen(PORT, () => {
+  console.log(`Server is running at http://localhost:${PORT}`);
 });
