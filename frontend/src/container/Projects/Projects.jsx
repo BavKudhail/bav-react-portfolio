@@ -30,11 +30,11 @@ const Projects = () => {
         </div>
         {/* project card */}
         <motion.div className="projects__card-container">
-          <div className="app__work-item app__flex">
-            <div className="app__work-img app__flex">
+          <div className="projects-item app__flex">
+            <div className="projects-img app__flex">
               <img src={defaultIMG} />
             </div>
-            <div className="app__work-content app__flex">
+            <div className="projects-content app__flex">
               <h4 className="bold-text">Project Title</h4>
               <p className="p-text">Project Description</p>
             </div>
