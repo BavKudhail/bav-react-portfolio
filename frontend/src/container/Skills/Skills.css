@@ -1,3 +1,49 @@
-h1 {
-  color: maroon;
+.skills-container {
+  width: 80%;
+  margin-top: 3rem;
+
+  display: flex;
+  flex-direction: row;
+}
+
+.skills-list {
+  flex: 1;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin-right: 5rem;
+}
+
+.skills-item {
+  flex-direction: column;
+  text-align: center;
+  margin: 1rem;
+  transition: all 0.3s ease-in-out;
+}
+
+.skills-item div {
+  width: 90px;
+  height: 90px;
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  background-color: rgba(255, 255, 255, 0.2);
+}
+.skills-item p {
+  font-weight: 500;
+  margin-top: 0.5rem;
+}
+
+.skill-img {
+  width: 50px;
+  height: 50px;
+}
+
+.blur {
+  position: absolute;
+  filter: blur(20px);
+}
+
+.skills-item div :hover {
+  box-shadow: 0 0 25px #fef4f5;
 }

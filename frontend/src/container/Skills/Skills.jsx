@@ -2,6 +2,7 @@ import React from "react";
 import "./Skills.css";
 import { motion } from "framer-motion";
 import reactIcon from "../../assets/react.png";
+import { Wrapper } from "../../hoc";
 
 const Skills = () => {
   return (
@@ -9,12 +10,12 @@ const Skills = () => {
       <div className="skills">
         <h2 className="head-text">Skills</h2>
         <div className="skills__container">
-          <div>
+          <div className="skills-list">
             {/* map over each return motion div */}
-            <motion.div>
-              <div>
-                <img src={reactIcon} />
-                <img src={reactIcon} />
+            <motion.div className="skills-item app__flex">
+              <div className="app__flex">
+                <img className="skill-img" src={reactIcon} />
+                <img className="skill-img blur" src={reactIcon} />
               </div>
               <p>React</p>
             </motion.div>
@@ -25,4 +26,4 @@ const Skills = () => {
   );
 };
 
-export default Skills;
+export default Wrapper(Skills, "skills");
