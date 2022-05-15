@@ -12,17 +12,13 @@ const Footer = () => {
         <div className="contact__cards">
           <div className="contact__card">
             {/* email */}
-            <img src={emailIMG} />
-            <a href="mailto:bavkudhail@gmail.com" className="p-text">
-              bavkudhail@gmail.com
-            </a>
+            <img className="contact__img" src={emailIMG} />
+            <a href="mailto:bavkudhail@gmail.com">bavkudhail@gmail.com</a>
           </div>
           <div className="contact__card">
             {/* phone */}
-            <img src={phoneIMG} />
-            <a href="tel: +44 (774653912)" className="p-text">
-              07446835912
-            </a>
+            <img className="contact__img" src={phoneIMG} />
+            <a href="tel: +44 (774653912)">07446835912</a>
           </div>
         </div>
       </div>

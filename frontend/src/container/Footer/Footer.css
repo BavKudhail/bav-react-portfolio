@@ -1,3 +1,43 @@
-h1 {
-  color: pink;
+.contact__container {
+  width: 100%;
+}
+
+.contact__cards {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 4rem 2rem 2rem;
+}
+
+.contact__card {
+  min-width: 290px;
+  display: flex;
+  align-items: center;
+  margin: 1rem 2rem;
+  padding: 1rem;
+  border-radius: 10px;
+  cursor: pointer;
+  background-image: linear-gradient(50deg, #00bbff 0%, #a600ff 100%);
+  transition: all 0.3s ease-in-out;
+}
+
+.contact__card:hover {
+  box-shadow: 0 0 25px #7600c0;
+}
+
+.contact__card a {
+  text-decoration: none;
+  margin: 0 1rem;
+  font-weight: 500;
+  color: white;
+}
+.contact__card p {
+  font-weight: 600;
+}
+
+.contact__img {
+  width: 40px;
+  height: 40px;
+  margin: 0 0.7rem;
 }
