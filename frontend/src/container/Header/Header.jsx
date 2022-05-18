@@ -14,12 +14,25 @@ const Header = () => {
   return (
     <>
       <div className="header">
-        <div className="header__container">
-          <div>
-            <div className="sub-text-container">
-              <p className="sub-text">Hey there, I'm </p>
+        <div>
+          <div className="header__container">
+            <div>
+              <div className="sub-text-container">
+                <p className="sub-text">Hey there, I'm </p>
+              </div>
             </div>
-            <a href="#about">
+          </div>
+          <div className="blob-container">
+            <div className="tech-logo bulb-logo">
+              <img src={lightBulb} />
+            </div>
+            <div className="tech-logo react-logo">
+              <img className="tech-logo-img" src={reactGlow} />
+            </div>
+            <div className="tech-logo javascript-logo">
+              <img className="tech-logo-img" src={javascriptGlow} />
+            </div>
+            <div className="header_badge_container">
               <motion.div
                 className="header__badge"
                 whileHover={{
@@ -54,24 +67,13 @@ const Header = () => {
                   </div>
                 </div>
               </motion.div>
-            </a>
+            </div>
+            <motion.div
+              className="fixed-blur"
+              whileInView={{ scale: [0, 1] }}
+              transition={{ duration: 1, ease: "easeInOut" }}
+            />
           </div>
-        </div>
-        <div className="blob-container">
-          <div className="tech-logo bulb-logo">
-            <img src={lightBulb} />
-          </div>
-          <div className="tech-logo react-logo">
-            <img className="tech-logo-img" src={reactGlow} />
-          </div>
-          <div className="tech-logo javascript-logo">
-            <img className="tech-logo-img" src={javascriptGlow} />
-          </div>
-          <motion.div
-            className="fixed-blur"
-            whileInView={{ scale: [0, 1] }}
-            transition={{ duration: 1, ease: "easeInOut" }}
-          />
         </div>
       </div>
     </>
