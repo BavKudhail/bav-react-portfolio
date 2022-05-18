@@ -9,6 +9,8 @@ import techtab from "../assets/techtab.JPG";
 // deployed URL
 // tech-stack
 
+// test
+
 const FeaturedData = [
   {
     id: "1",
