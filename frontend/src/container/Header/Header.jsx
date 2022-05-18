@@ -2,6 +2,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import "./Header.css";
 import { Wrapper } from "../../hoc";
+import BlobAnimation from "../../components/BlobAnimation";
 
 // images
 import bavAvatar from "../../assets/bav-avatar.jpg";
@@ -15,6 +16,7 @@ const Header = () => {
   return (
     <>
       <div className="header">
+        <BlobAnimation />
         <div>
           <div className="header__container">
             <div>
