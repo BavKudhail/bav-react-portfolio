@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/bav-react-portfolio/static/css/main.07fa5010.css",
+    "main.js": "/bav-react-portfolio/static/js/main.7cccd78c.js",
+    "static/media/Profile.gif": "/bav-react-portfolio/static/media/Profile.3d690daadb4fca62e1a3.gif",
+    "static/media/defaultIMG.jpg": "/bav-react-portfolio/static/media/defaultIMG.c66dfebe5b81921f0667.jpg",
+    "static/media/macromeals.jpg": "/bav-react-portfolio/static/media/macromeals.83a23caff78d3a78c394.jpg",
+    "static/media/techtab.JPG": "/bav-react-portfolio/static/media/techtab.58185d5607100087c1f5.JPG",
+    "static/media/about_avatar.JPG": "/bav-react-portfolio/static/media/about_avatar.7f93a007dbcf13984504.JPG",
+    "static/media/bav-avatar.jpg": "/bav-react-portfolio/static/media/bav-avatar.52c83c6c54c239e7976c.jpg",
+    "static/media/phone-call.png": "/bav-react-portfolio/static/media/phone-call.55a493978d215f83e039.png",
+    "static/media/react-glow.png": "/bav-react-portfolio/static/media/react-glow.9cff6f22781ed8ffc02f.png",
+    "static/media/javascript-glow.png": "/bav-react-portfolio/static/media/javascript-glow.047a1517954a357bc039.png",
+    "static/media/light-bulb.png": "/bav-react-portfolio/static/media/light-bulb.bf56eb4977e0439c0a10.png",
+    "index.html": "/bav-react-portfolio/index.html",
+    "main.07fa5010.css.map": "/bav-react-portfolio/static/css/main.07fa5010.css.map",
+    "main.7cccd78c.js.map": "/bav-react-portfolio/static/js/main.7cccd78c.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.07fa5010.css",
+    "static/js/main.7cccd78c.js"
+  ]
+}
