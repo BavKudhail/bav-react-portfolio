@@ -8,6 +8,7 @@ import bavAvatar from "../../assets/bav-avatar.jpg";
 import javascriptGlow from "../../assets/javascript-glow.png";
 import reactGlow from "../../assets/react-glow.png";
 import lightBulb from "../../assets/light-bulb.png";
+import aboutAvatar from "../../assets/about_avatar.JPG";
 
 const Header = () => {
   return (
@@ -16,7 +17,7 @@ const Header = () => {
         <div className="header__container">
           <div>
             <div className="sub-text-container">
-              <p className="sub-text">Hey there</p>
+              <p className="sub-text">Hey there, I'm </p>
             </div>
             <a href="#about">
               <motion.div
@@ -26,12 +27,31 @@ const Header = () => {
                   transition: { duration: 0.3 },
                 }}
               >
-                <div>
-                  <img className="memoji" src={bavAvatar} />
+                {/* image */}
+                <div className="memoji_container">
+                  <img className="memoji" src={aboutAvatar} />
                 </div>
-                <div>
-                  <p className="p-text">My name is </p>
-                  <h1 className="head-text">Bav Kudhail</h1>
+                {/* content */}
+                <div className="badge_content_container">
+                  <div className="badge_content">
+                    <div>
+                      <span className="code-text">creator ID card</span>
+                    </div>
+                    <div>
+                      <h1 className="head-text">Bav Kudhail</h1>
+                    </div>
+                    <div>
+                      <p className="sub-text">
+                        I design and code awesome stuff
+                      </p>
+                    </div>
+                    <div>
+                      <span className="code-text">ID: 0001112203033</span>
+                    </div>
+                    <div>
+                      <span className="code-text">valid untill 3075</span>
+                    </div>
+                  </div>
                 </div>
               </motion.div>
             </a>
