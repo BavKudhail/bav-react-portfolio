@@ -9,6 +9,7 @@ import javascriptGlow from "../../assets/javascript-glow.png";
 import reactGlow from "../../assets/react-glow.png";
 import lightBulb from "../../assets/light-bulb.png";
 import aboutAvatar from "../../assets/about_avatar.JPG";
+import redux from "../../assets/redux.png";
 
 const Header = () => {
   return (
@@ -31,6 +32,9 @@ const Header = () => {
             </div>
             <div className="tech-logo javascript-logo">
               <img className="tech-logo-img" src={javascriptGlow} />
+            </div>
+            <div className="tech-logo redux-logo">
+              <img className="tech-logo-img" src={redux} />
             </div>
             <div className="header_badge_container">
               <motion.div
