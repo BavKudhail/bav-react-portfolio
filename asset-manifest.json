@@ -1,23 +1,27 @@
 {
   "files": {
-    "main.css": "/bav-react-portfolio/static/css/main.07fa5010.css",
-    "main.js": "/bav-react-portfolio/static/js/main.7cccd78c.js",
+    "main.css": "/bav-react-portfolio/static/css/main.9430c1ee.css",
+    "main.js": "/bav-react-portfolio/static/js/main.58506495.js",
     "static/media/Profile.gif": "/bav-react-portfolio/static/media/Profile.3d690daadb4fca62e1a3.gif",
     "static/media/defaultIMG.jpg": "/bav-react-portfolio/static/media/defaultIMG.c66dfebe5b81921f0667.jpg",
     "static/media/macromeals.jpg": "/bav-react-portfolio/static/media/macromeals.83a23caff78d3a78c394.jpg",
     "static/media/techtab.JPG": "/bav-react-portfolio/static/media/techtab.58185d5607100087c1f5.JPG",
     "static/media/about_avatar.JPG": "/bav-react-portfolio/static/media/about_avatar.7f93a007dbcf13984504.JPG",
     "static/media/bav-avatar.jpg": "/bav-react-portfolio/static/media/bav-avatar.52c83c6c54c239e7976c.jpg",
+    "static/media/redux.png": "/bav-react-portfolio/static/media/redux.c9be37e0fece29c624b0.png",
+    "static/media/sass.png": "/bav-react-portfolio/static/media/sass.36e863bfbcb25c109d00.png",
+    "static/media/node.png": "/bav-react-portfolio/static/media/node.8683d89cf78ffae3d1f7.png",
     "static/media/phone-call.png": "/bav-react-portfolio/static/media/phone-call.55a493978d215f83e039.png",
     "static/media/react-glow.png": "/bav-react-portfolio/static/media/react-glow.9cff6f22781ed8ffc02f.png",
+    "static/media/graphql.png": "/bav-react-portfolio/static/media/graphql.0372057049181c5de51a.png",
     "static/media/javascript-glow.png": "/bav-react-portfolio/static/media/javascript-glow.047a1517954a357bc039.png",
     "static/media/light-bulb.png": "/bav-react-portfolio/static/media/light-bulb.bf56eb4977e0439c0a10.png",
     "index.html": "/bav-react-portfolio/index.html",
-    "main.07fa5010.css.map": "/bav-react-portfolio/static/css/main.07fa5010.css.map",
-    "main.7cccd78c.js.map": "/bav-react-portfolio/static/js/main.7cccd78c.js.map"
+    "main.9430c1ee.css.map": "/bav-react-portfolio/static/css/main.9430c1ee.css.map",
+    "main.58506495.js.map": "/bav-react-portfolio/static/js/main.58506495.js.map"
   },
   "entrypoints": [
-    "static/css/main.07fa5010.css",
-    "static/js/main.7cccd78c.js"
+    "static/css/main.9430c1ee.css",
+    "static/js/main.58506495.js"
   ]
 }
