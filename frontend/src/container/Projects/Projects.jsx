@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import "./Projects.css";
 import { Wrapper } from "../../hoc";
 import { motion } from "framer-motion";
@@ -6,14 +6,26 @@ import defaultIMG from "../../assets/defaultIMG.jpg";
 import { AiFillEye, AiFillGithub } from "react-icons/ai";
 import ProjectData from "../../data/ProjectData";
 
+const filterButtons = ["Front-end", "Back-end", "Full-stack", "Design", "All"];
+
 const Projects = () => {
-  const filterButtons = [
-    "Front-end",
-    "Back-end",
-    "Full-stack",
-    "Design",
-    "All",
-  ];
+  const [filterProject, setFilterProject] = useState(ProjectData);
+
+  // set active button
+  const [activeFilter, setActiveFilter] = useState("All");
+
+  const projectFilter = (button) => {
+    setActiveFilter(button);
+    if (button === "All") {
+      setFilterProject(ProjectData);
+    } else {
+      setFilterProject(
+        ProjectData.filter((project) => {
+          return project.tags.includes(button);
+        })
+      );
+    }
+  };
 
   return (
     <>
@@ -27,7 +39,13 @@ const Projects = () => {
         <div className="projects__filter">
           {filterButtons.map((button, index) => {
             return (
-              <div className="projects__filter-button" key={index}>
+              <div
+                className={`projects__filter-button ${
+                  activeFilter === button ? "item-active" : ""
+                }`}
+                key={index}
+                onClick={() => projectFilter(button)}
+              >
                 {button}
               </div>
             );
@@ -35,9 +53,10 @@ const Projects = () => {
         </div>
         {/* project card */}
         <motion.div className="projects__card-container">
-          {ProjectData.map((project) => {
+          {/* {ProjectData.map((project) => { */}
+          {filterProject.map((project, index) => {
             return (
-              <div className="projects-item app__flex">
+              <div className="projects-item app__flex" key={index}>
                 <div className="projects-img app__flex">
                   <img src={project.image} />
                   <motion.div
