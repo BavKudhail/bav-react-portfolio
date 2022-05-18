@@ -46,7 +46,7 @@ const Projects = () => {
                       duration: 0.25,
                       ease: "easeInOut",
                     }}
-                    className="app__work-hover app__flex"
+                    className="projects-hover app__flex"
                   >
                     <a href={project.githubUrl} target="_blank" rel="norefer">
                       <motion.div
