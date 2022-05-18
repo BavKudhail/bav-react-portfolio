@@ -1,10 +1,38 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Footer.css";
 import { Wrapper } from "../../hoc";
 import phoneIMG from "../../assets/phone-call.png";
 import emailIMG from "../../assets/mail.png";
+import emailjs from "emailjs-com";
+
+const Result = () => {
+  return <p>Your message has been sent</p>;
+};
 
 const Footer = () => {
+  const [result, setResult] = useState(false);
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        "service_i1m7827",
+        "template_cgm9jol",
+        e.target,
+        "qjylWPQJ2oNjKBUnB"
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
+    e.target.reset();
+    setResult(true);
+  };
+
   return (
     <>
       <div className="contact__container">
@@ -23,7 +51,11 @@ const Footer = () => {
           </div>
         </div>
         {/* contact form */}
-        <div className="contact__form-container">
+        <form
+          action=""
+          onSubmit={sendEmail}
+          className="contact__form-container"
+        >
           <div className="contact__form app__flex">
             <div className="app__flex">
               <input
@@ -36,7 +68,7 @@ const Footer = () => {
             <div className="app__flex">
               <input
                 className="p-text input-field"
-                name="name"
+                name="email"
                 type="text"
                 placeholder="Your Email"
               />
@@ -51,8 +83,9 @@ const Footer = () => {
             <button type="button" className="msg-button">
               Send Message
             </button>
+            <div>{result ? <Result /> : null}</div>
           </div>
-        </div>
+        </form>
       </div>
     </>
   );
