@@ -90,4 +90,4 @@ export const Featured = () => {
   );
 };
 
-export default Wrapper(Featured, "featured");
+export default Wrapper(Featured, "work");
