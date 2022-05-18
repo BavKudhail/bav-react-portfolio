@@ -49,3 +49,36 @@
   margin-bottom: 1.5rem;
   font-family: var(--font-marker);
 }
+
+.app__social {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-direction: column;
+
+  padding: 1rem;
+}
+
+.app__social div {
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  margin: 0.25rem 0;
+  background-color: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.3s ease-in-out;
+}
+
+.app__social div:hover {
+  box-shadow: 0 0 20px rgba(0, 125, 197, 0.5);
+  cursor: pointer;
+}
+
+.app__social svg {
+  width: 15px;
+  height: 15px;
+  color: var(--blue-color);
+}
