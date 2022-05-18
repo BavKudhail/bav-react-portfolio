@@ -40,9 +40,16 @@ export const Featured = () => {
                   src={project.image}
                 />
               </div>
-              <div className="text-container">
-                <h5 className="project-title">{project.title}</h5>
-                <p className="project-description">{project.description}</p>
+              <div>
+                <div className="text-container">
+                  <h5 className="project-title">{project.title}</h5>
+                  <p className="project-description">{project.description}</p>
+                </div>
+                <div className="tech-container">
+                  {project.techStack.map((tech) => {
+                    return <div className="smaller-text">{tech}</div>;
+                  })}
+                </div>
               </div>
               {/* test */}
               <motion.div
