@@ -40,7 +40,35 @@ const Projects = () => {
               <div className="projects-item app__flex">
                 <div className="projects-img app__flex">
                   <img src={project.image} />
+                  <motion.div
+                    whileHover={{ opacity: [0, 1] }}
+                    transition={{
+                      duration: 0.25,
+                      ease: "easeInOut",
+                    }}
+                    className="app__work-hover app__flex"
+                  >
+                    <a href={project.githubUrl} target="_blank" rel="norefer">
+                      <motion.div
+                        whileInView={{ scale: [0, 1] }}
+                        transition={{ duration: 0.25 }}
+                        className="app__flex"
+                      >
+                        <AiFillEye />
+                      </motion.div>
+                    </a>
+                    <a href={project.deployedUrl} target="_blank" rel="norefer">
+                      <motion.div
+                        whileInView={{ scale: [0, 1] }}
+                        transition={{ duration: 0.25 }}
+                        className="app__flex"
+                      >
+                        <AiFillGithub />
+                      </motion.div>
+                    </a>
+                  </motion.div>
                 </div>
+
                 <div className="projects-content app__flex">
                   <h4 className="bold-text">{project.title}</h4>
                   <p className="p-text">{project.description}</p>
