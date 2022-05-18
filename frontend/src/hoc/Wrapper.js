@@ -1,5 +1,6 @@
 import React from "react";
 import { SocialLinks } from "../components";
+import BlobAnimation from "../components/BlobAnimation";
 
 const Wrapper = (Component, idName, classNames) =>
   function HOC() {

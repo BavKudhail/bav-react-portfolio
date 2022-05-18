@@ -49,7 +49,7 @@
 }
 
 .projects-item:hover {
-  box-shadow: 0 0 25px rgb(141, 11, 255);
+  box-shadow: 0 0 25px rgba(11, 161, 255, 0.3);
 }
 
 .projects-img {

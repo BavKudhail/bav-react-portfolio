@@ -4,11 +4,13 @@ import { motion } from "framer-motion";
 import reactIcon from "../../assets/react.png";
 import { Wrapper } from "../../hoc";
 import SkillsData from "../../data/SkillsData";
+import { BlobAnimation } from "../../components";
 
 const Skills = () => {
   return (
     <>
       <div className="skills">
+        <BlobAnimation />
         <h2 className="head-text">Skills</h2>
         <div className="skills__container">
           <div className="skills-list">
