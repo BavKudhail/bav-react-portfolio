@@ -6,7 +6,14 @@ import phoneIMG from "../../assets/phone-call.png";
 import emailIMG from "../../assets/mail.png";
 
 const Result = () => {
-  return <p>Your message has been sent</p>;
+  return (
+    <div>
+      <p className="sub-text">
+        Your message has been sent. ✈️<br></br>I will contact you soon.
+      </p>
+      ;
+    </div>
+  );
 };
 
 const Footer = () => {
@@ -59,6 +66,7 @@ const Footer = () => {
           className="contact__form-container"
         >
           <div className="contact__form app__flex">
+            <div>{result ? <Result /> : null}</div>
             <div className="app__flex">
               <input
                 className="p-text input-field"
@@ -85,7 +93,6 @@ const Footer = () => {
             <button type="submit" className="msg-button">
               Send Message
             </button>
-            <div>{result ? <Result /> : null}</div>
           </div>
         </form>
       </div>
