@@ -16,7 +16,7 @@ const Header = () => {
   return (
     <>
       <div className="header">
-        <BlobAnimation />
+        {/* <BlobAnimation /> */}
         <div>
           <div className="header__container">
             <div>
@@ -37,6 +37,8 @@ const Header = () => {
             </div>
             <div className="tech-logo redux-logo">
               <img className="tech-logo-img" src={redux} />
+              <img className="tech-logo-img blurred" src={redux} />
+              <img className="tech-logo-img blurred" src={redux} />
             </div>
             <div className="header_badge_container">
               <motion.div

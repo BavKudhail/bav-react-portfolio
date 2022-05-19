@@ -2,8 +2,11 @@ import React from "react";
 import "./About.css";
 import { Wrapper } from "../../hoc";
 import aboutAvatar from "../../assets/about_avatar.JPG";
+import resume from "../../assets/Resume.pdf";
 
-// images
+// resume-link
+const resumeUrl =
+  "https://drive.google.com/drive/folders/1rgMF55-8A6_ffDPgnIzpBk-_yENj4jgn?usp=sharing";
 
 const About = () => {
   return (
@@ -38,7 +41,9 @@ const About = () => {
           </div>
         </div>
         <div className="btn-container">
-          <button>Resume</button>
+          <a href={resume} target="_blank">
+            Resume
+          </a>
         </div>
       </div>
     </>
