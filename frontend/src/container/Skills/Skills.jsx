@@ -10,8 +10,8 @@ const Skills = () => {
   return (
     <>
       <div className="skills">
-        <BlobAnimation />
         <h2 className="head-text">Skills</h2>
+        <h4 className="sub-text">Tech I like to use</h4>
         <div className="skills__container">
           <div className="skills-list">
             {SkillsData.map((skill) => {
@@ -25,6 +25,7 @@ const Skills = () => {
                 </motion.div>
               );
             })}
+            <BlobAnimation />
           </div>
         </div>
       </div>
