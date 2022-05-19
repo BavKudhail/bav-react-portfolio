@@ -5,7 +5,7 @@ import { Wrapper } from "../../hoc";
 import BlobAnimation from "../../components/BlobAnimation";
 
 // images
-import bavAvatar from "../../assets/bav-avatar.jpg";
+import bavAvatar from "../../assets/bav-avatar.gif";
 import javascriptGlow from "../../assets/javascript-glow.png";
 import reactGlow from "../../assets/react-glow.png";
 import lightBulb from "../../assets/light-bulb.png";
@@ -50,7 +50,7 @@ const Header = () => {
               >
                 {/* image */}
                 <div className="memoji_container">
-                  <img className="memoji" src={aboutAvatar} />
+                  <img className="memoji" src={bavAvatar} />
                 </div>
                 {/* content */}
                 <div className="badge_content_container">
