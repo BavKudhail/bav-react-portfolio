@@ -52,6 +52,7 @@ const Header = () => {
                 <div className="memoji_container">
                   <img className="memoji" src={bavAvatar} />
                 </div>
+                <div className="memoji-line" />
                 {/* content */}
                 <div className="badge_content_container">
                   <div className="badge_content">
