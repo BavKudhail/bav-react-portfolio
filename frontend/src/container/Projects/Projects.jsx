@@ -6,7 +6,7 @@ import defaultIMG from "../../assets/defaultIMG.jpg";
 import { AiFillEye, AiFillGithub } from "react-icons/ai";
 import ProjectData from "../../data/ProjectData";
 
-const filterButtons = ["Front-end", "Back-end", "Full-stack", "Design", "All"];
+const filterButtons = ["Front-end", "Back-end", "Full-stack", "All"];
 
 const Projects = () => {
   const [filterProject, setFilterProject] = useState(ProjectData);
