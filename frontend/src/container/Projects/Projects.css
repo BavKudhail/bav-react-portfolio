@@ -116,3 +116,15 @@
   background-color: var(--blue-color);
   color: #fff;
 }
+
+/* MEDIA QUERIES */
+
+@media screen and (min-width: 2000px) {
+}
+
+@media screen and (max-width: 300px) {
+  .project-item {
+    width: 100%;
+    margin: 1rem;
+  }
+}

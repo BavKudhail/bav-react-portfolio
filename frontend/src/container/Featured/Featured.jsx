@@ -12,7 +12,7 @@ export const Featured = () => {
   return (
     <>
       <div>
-        <BlobAnimation />
+        {/* <BlobAnimation /> */}
         <h2 className="head-text">
           Alright.... Talk is cheap. <br />
           Show me the code.
