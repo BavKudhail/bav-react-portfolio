@@ -25,9 +25,9 @@ const Skills = () => {
                 </motion.div>
               );
             })}
-            <BlobAnimation />
           </div>
         </div>
+        <BlobAnimation />
       </div>
     </>
   );

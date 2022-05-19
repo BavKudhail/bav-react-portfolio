@@ -1,9 +1,9 @@
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
+import emailjs from "@emailjs/browser";
 import "./Footer.css";
 import { Wrapper } from "../../hoc";
 import phoneIMG from "../../assets/phone-call.png";
 import emailIMG from "../../assets/mail.png";
-import emailjs from "emailjs-com";
 
 const Result = () => {
   return <p>Your message has been sent</p>;
@@ -11,6 +11,7 @@ const Result = () => {
 
 const Footer = () => {
   const [result, setResult] = useState(false);
+  const form = useRef();
   const sendEmail = (e) => {
     e.preventDefault();
 
@@ -18,7 +19,7 @@ const Footer = () => {
       .sendForm(
         "service_i1m7827",
         "template_cgm9jol",
-        e.target,
+        form.current,
         "qjylWPQJ2oNjKBUnB"
       )
       .then(
@@ -52,6 +53,7 @@ const Footer = () => {
         </div>
         {/* contact form */}
         <form
+          ref={form}
           action=""
           onSubmit={sendEmail}
           className="contact__form-container"
@@ -80,7 +82,7 @@ const Footer = () => {
                 name="message"
               />
             </div>
-            <button type="button" className="msg-button">
+            <button type="submit" className="msg-button">
               Send Message
             </button>
             <div>{result ? <Result /> : null}</div>
