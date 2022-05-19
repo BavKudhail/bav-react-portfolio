@@ -14,17 +14,25 @@ const Projects = () => {
   // set active button
   const [activeFilter, setActiveFilter] = useState("All");
 
+  // animate card
+  const [cardTransition, setCardTransition] = useState({ y: 0, opacity: 1 });
+
   const projectFilter = (button) => {
     setActiveFilter(button);
-    if (button === "All") {
-      setFilterProject(ProjectData);
-    } else {
-      setFilterProject(
-        ProjectData.filter((project) => {
-          return project.tags.includes(button);
-        })
-      );
-    }
+    setCardTransition([{ y: 100, opacity: 0 }]);
+
+    setTimeout(() => {
+      setCardTransition([{ y: 0, opacity: 1 }]);
+      if (button === "All") {
+        setFilterProject(ProjectData);
+      } else {
+        setFilterProject(
+          ProjectData.filter((project) => {
+            return project.tags.includes(button);
+          })
+        );
+      }
+    }, 500);
   };
 
   return (
@@ -52,7 +60,11 @@ const Projects = () => {
           })}
         </div>
         {/* project card */}
-        <motion.div className="projects__card-container">
+        <motion.div
+          className="projects__card-container"
+          transition={{ duration: 0.4 }}
+          animate={cardTransition}
+        >
           {/* {ProjectData.map((project) => { */}
           {filterProject.map((project, index) => {
             return (

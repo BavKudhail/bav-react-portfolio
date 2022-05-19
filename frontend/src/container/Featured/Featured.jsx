@@ -18,9 +18,7 @@ export const Featured = () => {
           Show me the code.
           <span>💻</span>
         </h2>
-        <div className="quote-container">
-          <span className="quote">🎯 Insert cool but cheesy quote here</span>
-        </div>
+
         <h4 className="sub-text">
           Featured Projects <span>📍</span>{" "}
         </h4>
