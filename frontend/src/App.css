@@ -1,17 +1,14 @@
-body {
-  overflow-x: hidden;
-}
-
 .app {
   background-color: var(--primary-color);
   font-family: var(--font-base);
+  position: relative;
+  overflow: hidden;
 }
 
 .app__flex {
   display: flex;
   justify-content: center;
   align-items: center;
-  overflow: hidden;
 }
 
 .app__wrapper {
@@ -27,7 +24,6 @@ body {
   min-height: 100vh;
   display: flex;
   flex-direction: row;
-  overflow: hidden;
 }
 
 .head-text {
@@ -93,10 +89,12 @@ body {
 
 @media screen and (max-width: 450px) {
   .head-text {
-    font-size: 2rem;
+    font-size: 1.75rem;
   }
   .sub-text {
-    font-size: 1rem;
+    font-size: 0.75rem;
+  }
+  .app__wrapper {
   }
 }
 

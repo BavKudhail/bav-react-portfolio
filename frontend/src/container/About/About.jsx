@@ -14,7 +14,7 @@ const About = () => {
       <div className="about">
         <div>
           <h2 className="head-text">
-            I am a creative developer. <br></br> With a designers eye.{" "}
+            Creative developer. <br></br> With a designers eye.{" "}
           </h2>
           <h5 className="sub-text">About Me</h5>
         </div>

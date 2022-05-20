@@ -14,7 +14,6 @@ export const Featured = () => {
       <div>
         {/* <BlobAnimation /> */}
         <h2 className="head-text">
-          Alright.... Talk is cheap. <br />
           Show me the code.
           <span>💻</span>
         </h2>

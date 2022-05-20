@@ -87,8 +87,15 @@
     flex-direction: column;
   }
 
+  .about__me {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
   .about__me img {
     width: 300px;
+    margin: 2rem;
   }
 
   .about__me-background {
@@ -107,8 +114,15 @@
     flex-direction: column;
   }
 
+  .about__me {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
   .about__me img {
-    width: 100%;
+    width: 200px;
+    margin: 2rem;
   }
 
   .about__me-background {
