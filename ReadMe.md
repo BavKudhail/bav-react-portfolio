@@ -35,7 +35,7 @@
 
 
 ### Desktop!
-[header-image](https://user-images.githubusercontent.com/93915846/169517353-d97fdf9b-da74-44cc-9967-69c6f02ea097.JPG)
+![header-image](https://user-images.githubusercontent.com/93915846/169517353-d97fdf9b-da74-44cc-9967-69c6f02ea097.JPG)
 ![projects](https://user-images.githubusercontent.com/93915846/169516290-7baafb12-35ac-4cb3-a6ad-0940a9ae9a9c.JPG)
 ![more-projects](https://user-images.githubusercontent.com/93915846/169516276-b73e8a32-26e2-4ba6-9ec7-19e635c66feb.JPG)
 ![sills](https://user-images.githubusercontent.com/93915846/169516297-13c011a6-ab3c-453d-bddd-f0018fb3f7ae.JPG)
