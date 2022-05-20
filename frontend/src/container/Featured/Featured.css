@@ -109,6 +109,10 @@
   color: var(--white-color);
 }
 
+.tech-container span {
+  margin-left: 2rem;
+}
+
 /* MEDIA QUERIES */
 
 /* TABLET */

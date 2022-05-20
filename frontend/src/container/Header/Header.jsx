@@ -11,13 +11,14 @@ import reactGlow from "../../assets/react-glow.png";
 import lightBulb from "../../assets/light-bulb.png";
 import aboutAvatar from "../../assets/about_avatar.JPG";
 import redux from "../../assets/redux.png";
+import graphql from "../../assets/graphql.png";
 
 const Header = () => {
   return (
     <>
       <div className="header">
         <div>
-          {/* <BlobAnimation /> */}
+          <BlobAnimation />
           <div className="header__container">
             <div>
               <div className="sub-text-container">
@@ -26,28 +27,51 @@ const Header = () => {
             </div>
           </div>
           <div className="blob-container">
-            <div className="tech-logo bulb-logo">
+            <motion.div
+              className="tech-logo graphql-logo"
+              whileHover={{ scale: 1.2 }}
+              whileTap={{ scale: 0.8 }}
+              style={{ x: 100 }}
+            >
+              <img src={graphql} />
+              <img className="blurred" src={graphql} />
+            </motion.div>
+            <motion.div
+              className="tech-logo bulb-logo"
+              whileHover={{ scale: 1.2 }}
+              whileTap={{ scale: 0.8 }}
+              style={{ x: 100 }}
+            >
               <img src={lightBulb} />
-            </div>
-            <div className="tech-logo react-logo">
+            </motion.div>
+            <motion.div
+              className="tech-logo react-logo"
+              whileHover={{ scale: 1.2 }}
+              whileTap={{ scale: 0.8 }}
+              style={{ x: 100 }}
+            >
               <img className="tech-logo-img" src={reactGlow} />
-            </div>
-            <div className="tech-logo javascript-logo">
+            </motion.div>
+            <motion.div
+              className="tech-logo javascript-logo"
+              whileHover={{ scale: 1.2 }}
+              whileTap={{ scale: 0.8 }}
+              style={{ x: 100 }}
+            >
               <img className="tech-logo-img" src={javascriptGlow} />
-            </div>
-            <div className="tech-logo redux-logo">
+            </motion.div>
+            <motion.div
+              className="tech-logo redux-logo"
+              whileHover={{ scale: 1.2 }}
+              whileTap={{ scale: 0.8 }}
+              style={{ x: 100 }}
+            >
               <img className="tech-logo-img" src={redux} />
               <img className="tech-logo-img blurred" src={redux} />
               <img className="tech-logo-img blurred" src={redux} />
-            </div>
+            </motion.div>
             <div className="header_badge_container">
-              <motion.div
-                className="header__badge"
-                whileHover={{
-                  scale: 1.1,
-                  transition: { duration: 0.3 },
-                }}
-              >
+              <div className="header__badge">
                 {/* image */}
                 <div className="memoji_container">
                   <img className="memoji" src={bavAvatar} />
@@ -75,7 +99,7 @@ const Header = () => {
                     </div>
                   </div>
                 </div>
-              </motion.div>
+              </div>
             </div>
             <motion.div
               className="fixed-blur"

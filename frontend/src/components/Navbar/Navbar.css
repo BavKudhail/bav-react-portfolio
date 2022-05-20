@@ -127,11 +127,15 @@
   transition: all 0.3s ease-in-out;
 }
 
-/* if over 900px nav links will be hidden and replaced by mobile nav */
 @media screen and (max-width: 900px) {
   .navbar__links {
     display: none;
   }
 }
 
-/* MOBILE */
+/* if more than 900px - remove the menu bar */
+@media screen and (min-width: 900px) {
+  .navbar-menu {
+    display: none;
+  }
+}

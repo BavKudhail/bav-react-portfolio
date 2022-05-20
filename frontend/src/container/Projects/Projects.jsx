@@ -5,6 +5,7 @@ import { motion } from "framer-motion";
 import defaultIMG from "../../assets/defaultIMG.jpg";
 import { AiFillEye, AiFillGithub } from "react-icons/ai";
 import ProjectData from "../../data/ProjectData";
+import BlobAnimation from "../../components/BlobAnimation";
 
 const filterButtons = ["Front-end", "Back-end", "Full-stack", "All"];
 
@@ -38,6 +39,7 @@ const Projects = () => {
   return (
     <>
       <div className="projects">
+        <BlobAnimation />
         <div className="projects__intro">
           <h2 className="head-text">
             See More <span>🔥</span>

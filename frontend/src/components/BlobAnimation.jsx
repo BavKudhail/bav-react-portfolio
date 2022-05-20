@@ -3,8 +3,7 @@ import styled, { keyframes } from "styled-components";
 const BlobAnimation = () => {
   return (
     <div>
-      <Blob />;
-      <Blob2 />
+      <Blob />;<Blob2 />
     </div>
   );
 };
@@ -41,8 +40,8 @@ const Blob = styled.div`
   z-index: 0;
   filter: blur(100px);
   position: absolute;
-  width: 500px;
-  height: 500px;
+  width: 400px;
+  height: 400px;
   background: linear-gradient(
     180deg,
     rgba(47, 184, 255, 0.4) 31.77%,

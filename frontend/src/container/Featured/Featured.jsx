@@ -44,6 +44,7 @@ export const Featured = () => {
                     <p className="project-description">{project.description}</p>
                   </div>
                   <div className="tech-container">
+                    <span className=" code-text">Tech Stack</span>
                     {project.techStack.map((tech) => {
                       return <div className="smaller-text">{tech}</div>;
                     })}
@@ -60,7 +61,7 @@ export const Featured = () => {
                   className="app__featured-hover app__flex"
                 >
                   {/* deployed site link */}
-                  <a target="_blank" rel="norefer">
+                  <a href={project.deployedUrl} target="_blank" rel="norefer">
                     <motion.div
                       whileInView={{ scale: [0, 1] }}
                       transition={{ duration: 0.25 }}
@@ -70,7 +71,7 @@ export const Featured = () => {
                     </motion.div>
                   </a>
                   {/*  github repository link */}
-                  <a target="_blank" rel="norefer">
+                  <a href={project.githubUrl} target="_blank" rel="norefer">
                     <motion.div
                       whileInView={{ scale: [0, 1] }}
                       transition={{ duration: 0.25 }}

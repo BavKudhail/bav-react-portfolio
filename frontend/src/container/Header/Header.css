@@ -2,6 +2,7 @@
 
 .header {
   margin-top: 4rem;
+  overflow: hidden;
 }
 
 .code-text {
@@ -46,10 +47,16 @@
   /* effect */
   border: 0.2px solid rgba(255, 255, 255, 0.2);
   box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
-  background-color: rgba(255, 255, 255, 0.1);
-  backdrop-filter: blur(30px);
-  -webkit-backdrop-filter: blur(30px);
+  background-color: rgba(17, 0, 48, 0.2);
+  backdrop-filter: blur(80px);
+  -webkit-backdrop-filter: blur(80px);
   /* z-index */
+  transition: 1s ease-in-out;
+}
+
+.header__badge:hover {
+  border: 1px solid var(--blue-color);
+  transition: 1s ease-in-out;
 }
 
 .badge_content_container {
@@ -75,6 +82,8 @@
   font-weight: 500;
 }
 
+/* TECHNOLOGIES */
+
 .tech-logo {
   display: flex;
   justify-content: center;
@@ -98,20 +107,28 @@
 
 .react-logo {
   top: 600px;
-  left: calc(50% - 250px);
+  right: calc(50% + 450px);
+  width: 120px;
+  height: 120px;
+}
+
+.graphql-logo {
+  top: 800px;
+  left: calc(50% - 350px);
+  width: 90px;
+  height: 90px;
+  padding: 0.5rem;
+}
+
+.javascript-logo {
+  top: 500px;
+  left: calc(50% - -350px);
   width: 100px;
   height: 100px;
 }
 
-.javascript-logo {
-  top: 600px;
-  left: calc(50% - -250px);
-  width: 80px;
-  height: 80px;
-}
-
 .redux-logo {
-  top: 800px;
+  top: 700px;
   left: calc(50% + 100px);
   width: 90px;
   height: 90px;
@@ -126,13 +143,12 @@
 
 .fixed-blur {
   z-index: 0;
-  filter: blur(120px);
+  filter: blur(130px);
   position: absolute;
-  width: 500px;
-  height: 500px;
+  width: 400px;
+  height: 400px;
   border-radius: 50%;
-  background-color: #21d4fd;
-  background-image: linear-gradient(19deg, #21d4fd 0%, #b721ff 100%);
+  background-image: linear-gradient(19deg, #21e0fd 0%, #9304d5 100%);
 }
 .sub-text-container {
   display: flex;
@@ -177,6 +193,7 @@
     margin: 0;
     padding: 1rem;
   }
+
   .header__badge img {
     border-radius: 10px;
     height: 150px;
