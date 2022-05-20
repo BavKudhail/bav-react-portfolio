@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import "./Navbar.css";
 import { HiMenuAlt4, HiX } from "react-icons/hi";
 import { motion } from "framer-motion";
+import resume from "../../assets/Resume.pdf";
 
 const Navbar = () => {
   const navLinks = ["home", "about", "work", "skills", "contact"];
@@ -23,6 +24,9 @@ const Navbar = () => {
             </li>
           );
         })}
+        <a href={resume} target="_blank" className="navbar_link">
+          Resume
+        </a>
       </ul>
       {/* mobile navigation */}
       <div className="navbar-menu">
