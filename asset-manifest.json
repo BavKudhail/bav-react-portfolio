@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/bav-react-portfolio/static/css/main.878aba47.css",
-    "main.js": "/bav-react-portfolio/static/js/main.6311ff99.js",
+    "main.css": "/bav-react-portfolio/static/css/main.91a644b0.css",
+    "main.js": "/bav-react-portfolio/static/js/main.4ac9df92.js",
     "static/media/bav-avatar.gif": "/bav-react-portfolio/static/media/bav-avatar.51315ff47923030766d6.gif",
     "static/media/Profile.gif": "/bav-react-portfolio/static/media/Profile.3d690daadb4fca62e1a3.gif",
     "static/media/weatherdashboard.jpg": "/bav-react-portfolio/static/media/weatherdashboard.be37ac1249872e4d136e.jpg",
@@ -23,11 +23,11 @@
     "static/media/javascript-glow.png": "/bav-react-portfolio/static/media/javascript-glow.047a1517954a357bc039.png",
     "static/media/light-bulb.png": "/bav-react-portfolio/static/media/light-bulb.bf56eb4977e0439c0a10.png",
     "index.html": "/bav-react-portfolio/index.html",
-    "main.878aba47.css.map": "/bav-react-portfolio/static/css/main.878aba47.css.map",
-    "main.6311ff99.js.map": "/bav-react-portfolio/static/js/main.6311ff99.js.map"
+    "main.91a644b0.css.map": "/bav-react-portfolio/static/css/main.91a644b0.css.map",
+    "main.4ac9df92.js.map": "/bav-react-portfolio/static/js/main.4ac9df92.js.map"
   },
   "entrypoints": [
-    "static/css/main.878aba47.css",
-    "static/js/main.6311ff99.js"
+    "static/css/main.91a644b0.css",
+    "static/js/main.4ac9df92.js"
   ]
 }
