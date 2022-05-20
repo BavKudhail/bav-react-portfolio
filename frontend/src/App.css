@@ -11,6 +11,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  overflow: hidden;
 }
 
 .app__wrapper {
@@ -56,7 +57,7 @@ body {
 }
 
 .app__social {
-  display: flex;
+  display: none;
   justify-content: flex-end;
   align-items: center;
   flex-direction: column;
@@ -91,8 +92,17 @@ body {
 /* MEDIA QUERIES */
 
 @media screen and (max-width: 450px) {
+  .head-text {
+    font-size: 2rem;
+  }
+  .sub-text {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (min-width: 1200px) {
   .app__social {
-    display: none;
+    display: flex;
   }
 }
 

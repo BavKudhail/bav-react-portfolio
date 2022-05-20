@@ -122,7 +122,8 @@
 @media screen and (min-width: 2000px) {
 }
 
-@media screen and (max-width: 300px) {
+/* MOBILE */
+@media screen and (max-width: 450px) {
   .project-item {
     width: 100%;
     margin: 1rem;

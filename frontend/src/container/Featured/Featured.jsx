@@ -22,7 +22,7 @@ export const Featured = () => {
         <h4 className="sub-text">
           Featured Projects <span>📍</span>{" "}
         </h4>
-        <div>
+        <div className="container-test">
           {FeaturedData.map((project) => {
             return (
               <motion.div

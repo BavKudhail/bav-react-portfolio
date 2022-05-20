@@ -16,16 +16,17 @@ const About = () => {
           <h2 className="head-text">
             I am a creative developer. <br></br> With a designers eye.{" "}
           </h2>
+          <h5 className="sub-text">About Me</h5>
         </div>
         <div className="about__container">
           <div className="about__me">
-            <img src={aboutAvatar} />
+            <img className="avatar-back" src={aboutAvatar} />
             <div className="about__me-background" />
+            <img src={aboutAvatar} />
           </div>
           <div className="about__content">
             <div className="about__cards">
               <article className="about__card">
-                <h5 className="sub-text">About Me</h5>
                 <p className="p-text">
                   I am an Architectural designer turned Software Developer.
                   Currently enrolled in a full-stack web development course at

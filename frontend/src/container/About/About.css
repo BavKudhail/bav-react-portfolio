@@ -1,10 +1,10 @@
 .about {
+  padding: 1rem;
 }
 
 .about__container {
   display: flex;
   justify-content: center;
-  margin-top: 5rem;
 }
 
 .about__content {
@@ -20,21 +20,29 @@
 .about__me img {
   border-radius: 30px;
   z-index: 1;
-  position: absolute;
   transform: rotate(5deg);
   width: 300px;
   transition: 0.3s ease-in-out;
   border: 1px solid rgba(255, 255, 255, 0.2);
+  transition: 0.5s ease-in-out;
 }
 
 .about__me img:hover {
   transform: rotate(0deg);
   transition: 0.3s ease-in-out;
+  filter: blur(0px);
+  transition: 0.5s ease-in-out;
+}
+
+.avatar-back {
+  z-index: 0;
+  position: absolute;
 }
 
 .about__me-background {
-  height: 100%;
-  width: 100%;
+  position: absolute;
+  height: 200px;
+  width: 300px;
   background-image: linear-gradient(0deg, #ff29f4 0%, #6880e8 100%);
   filter: blur(30px);
   z-index: 0;
@@ -73,6 +81,26 @@
   transition: 0.3s ease-in-out;
 }
 
+@media screen and (max-width: 768px) {
+  .about__container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .about__me img {
+    width: 300px;
+  }
+
+  .about__me-background {
+    display: none;
+  }
+  .about__content {
+    margin: 0rem;
+  }
+}
+
+/* MOBILE */
+
 @media screen and (max-width: 450px) {
   .about__container {
     display: flex;
@@ -80,10 +108,13 @@
   }
 
   .about__me img {
-    position: relative;
+    width: 100%;
   }
 
   .about__me-background {
     display: none;
+  }
+  .about__content {
+    margin: 0rem;
   }
 }
