@@ -1,4 +1,8 @@
   ## React Portfolio
+  
+  ## Motivation
+  I decided to create my portfolio using react. As I wanted to deepen my knowledge of this framework as well as explore animation libraries such as framer-motion.
+  
   ![React App (6)](https://user-images.githubusercontent.com/93915846/169517663-90b923c3-b20a-4c3b-a4b2-0f57ced8da06.gif)
 
   
