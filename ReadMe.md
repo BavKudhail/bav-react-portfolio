@@ -51,6 +51,10 @@
 ![mobile-projects](https://user-images.githubusercontent.com/93915846/169516227-8e564622-5bfd-428e-bb91-06846cdf62f8.JPG)
 
 
+## Figma Mockup
+Prior to code. I designed the portfolio using figma in a way in which made the development process easier.
+![Desktop - 11](https://user-images.githubusercontent.com/93915846/172047187-c7e54c06-918d-4ce9-8a36-e4d5e67ed69e.png)
+
 
   
 ## Questions
