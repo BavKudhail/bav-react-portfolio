@@ -39,7 +39,7 @@ const Projects = () => {
   return (
     <>
       <div className="projects">
-        {/* <BlobAnimation /> */}
+        <BlobAnimation />
         <div className="projects__intro">
           <h2 className="head-text">
             See More <span>🔥</span>

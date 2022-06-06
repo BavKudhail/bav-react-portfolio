@@ -27,7 +27,7 @@ const Skills = () => {
             })}
           </div>
         </div>
-        {/* <BlobAnimation /> */}
+        <BlobAnimation />
       </div>
     </>
   );

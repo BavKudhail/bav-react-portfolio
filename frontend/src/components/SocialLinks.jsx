@@ -10,7 +10,7 @@ const SocialLinks = () => {
         </a>
       </div>
       <div>
-        <a target="_blank" href="https://www.linkedin.com/in/bavkudhail/">
+        <a target="_blank" href="https://www.linkedin.com/in/bav-kudhail/">
           <BsLinkedin />
         </a>
       </div>
