@@ -1,4 +1,8 @@
   ## React Portfolio
+  
+  ## Motivation
+  I decided to create my portfolio using react. As I wanted to deepen my knowledge of this framework as well as explore animation libraries such as framer-motion.
+  
   ![React App (6)](https://user-images.githubusercontent.com/93915846/169517663-90b923c3-b20a-4c3b-a4b2-0f57ced8da06.gif)
 
   
@@ -35,7 +39,7 @@
 
 
 ### Desktop!
-[header-image](https://user-images.githubusercontent.com/93915846/169517353-d97fdf9b-da74-44cc-9967-69c6f02ea097.JPG)
+![header-image](https://user-images.githubusercontent.com/93915846/169517353-d97fdf9b-da74-44cc-9967-69c6f02ea097.JPG)
 ![projects](https://user-images.githubusercontent.com/93915846/169516290-7baafb12-35ac-4cb3-a6ad-0940a9ae9a9c.JPG)
 ![more-projects](https://user-images.githubusercontent.com/93915846/169516276-b73e8a32-26e2-4ba6-9ec7-19e635c66feb.JPG)
 ![sills](https://user-images.githubusercontent.com/93915846/169516297-13c011a6-ab3c-453d-bddd-f0018fb3f7ae.JPG)
@@ -46,6 +50,10 @@
 ![mobile-header](https://user-images.githubusercontent.com/93915846/169516215-26b77ba2-f8a2-4b1a-a123-cb8b85c9c9a2.JPG)
 ![mobile-projects](https://user-images.githubusercontent.com/93915846/169516227-8e564622-5bfd-428e-bb91-06846cdf62f8.JPG)
 
+
+## Figma Mockup
+Prior to code. I designed the portfolio using figma in a way in which made the development process easier.
+![Desktop - 11](https://user-images.githubusercontent.com/93915846/172047187-c7e54c06-918d-4ce9-8a36-e4d5e67ed69e.png)
 
 
   
