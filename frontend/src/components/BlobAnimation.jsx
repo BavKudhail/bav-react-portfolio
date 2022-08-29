@@ -1,9 +1,10 @@
-import styled, { keyframes } from "styled-components";
+import styled, { keyframes } from 'styled-components';
 
 const BlobAnimation = () => {
   return (
     <div>
-      <Blob />;<Blob2 />
+      <Blob />
+      ;<Blob2 />
     </div>
   );
 };

@@ -15,7 +15,7 @@
   flex: 1;
   width: 100%;
   flex-direction: column;
-  padding: 4rem 2rem;
+  /* padding: 4rem 2rem; */
   overflow: hidden;
 }
 
@@ -53,19 +53,16 @@
 }
 
 .app__social {
-  display: none;
-  justify-content: flex-end;
-  align-items: center;
-  flex-direction: column;
-
-  padding: 1rem;
+  display: flex;
+  padding-top: 300px;
+  justify-content: center;
 }
 
 .app__social div {
   width: 40px;
   height: 40px;
   border-radius: 10px;
-  margin: 0.25rem 0;
+  margin: 0.25rem 0.25rem;
   background-color: rgba(255, 255, 255, 0.1);
   border: 1px solid rgba(255, 255, 255, 0.2);
   display: flex;
@@ -82,7 +79,7 @@
 .app__social svg {
   width: 15px;
   height: 15px;
-  color: var(--blue-color);
+  color: #ffffff;
 }
 
 /* MEDIA QUERIES */
@@ -95,12 +92,6 @@
     font-size: 0.75rem;
   }
   .app__wrapper {
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .app__social {
-    display: flex;
   }
 }
 

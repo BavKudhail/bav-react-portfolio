@@ -1,11 +1,12 @@
-@import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300;400;500&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300;400;500&display=swap');
 
 .header {
-  margin-top: 4rem;
+  /* background: url('../../assets/wallpaper-gradient.jpg'); */
+  background-size: cover;
 }
 
 .code-text {
-  font-family: "Source Code Pro", monospace;
+  font-family: 'Source Code Pro', monospace;
   color: var(--blue-color);
 }
 
@@ -18,10 +19,56 @@
   padding: 6rem 2rem 0rem;
 }
 
+.header h1 {
+  padding-top: 100px;
+  margin: 0;
+  color: #fff;
+  font-size: 70px;
+  line-height: 1.2;
+  opacity: 0;
+  animation: heroAnimation;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+  animation-timing-function: cubic-bezier(0.2, 0.8, 0.2, 1);
+  animation-delay: 0.1s;
+  font-weight: 600;
+}
+
+.header p {
+  padding: 30px 0px;
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 30px;
+  line-height: 1.5;
+  opacity: 0;
+  animation: heroAnimation 3s forwards cubic-bezier(0.2, 0.8, 0.2, 1);
+  animation-delay: 0.2s;
+}
+
+.CTA {
+  padding: 20px 50px;
+  font-size: 15px;
+  border: none;
+  font-weight: 700;
+  border-radius: 30px;
+  outline: none;
+  cursor: pointer;
+  transition: 1s cubic-bezier(0.2, 0.8, 0.2, 1);
+  transform: translateY(-6px);
+  background-image: linear-gradient(19deg, #505ca4 0%, #a076bd 100%);
+  color: #fff;
+}
+
+.CTA:hover {
+  transform: translateY(-10px);
+  background: #fff;
+  color: #000;
+}
+
 .header__container {
   display: flex;
   width: 100%;
   justify-content: center;
+  text-align: center;
 }
 
 .header__container a {
@@ -166,6 +213,17 @@
 769px — 1024px: Small screens, laptops.
 1025px — 1200px: Desktops, large screens.
 1201px and more — Extra large screens, TV */
+
+@keyframes heroAnimation {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
 
 /* DESKTOP */
 @media screen and (max-width: 1200px) {
