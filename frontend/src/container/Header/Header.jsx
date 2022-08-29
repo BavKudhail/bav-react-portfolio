@@ -11,7 +11,7 @@ const Header = () => {
     <>
       <div className='header'>
         <div>
-          {/* <BlobAnimation /> */}
+          <BlobAnimation />
           <div className='header__container'>
             <div>
               <h1>

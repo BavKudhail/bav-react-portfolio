@@ -3,7 +3,7 @@ import styled, { keyframes } from 'styled-components';
 const BlobAnimation = () => {
   return (
     <div>
-      <Blob />
+      {/* <Blob /> */}
       ;<Blob2 />
     </div>
   );
